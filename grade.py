@@ -1,10 +1,18 @@
-score=input("Enter your score")
-score=int(score)
+#input
+score=int(input("Enter your score : "))
+print("Your score is :",score)
+grade=None
+
+#process
 if score<=100 and score>=80:
-    print("Your grade is A.")
+    grade="A"
 elif score<=79 and score>=70:
-    print("Your grade is B.") 
+    grade="B"
 elif score<=69 and score>=0:
-    print("Your grade is C.")
+    grade="C"
 else:
-    print("Invalid input.")
+    print("N (Invalid)")
+
+#output
+print("Your grade is ",grade)
+
