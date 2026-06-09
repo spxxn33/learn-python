@@ -1,12 +1,19 @@
-w=input ("Enter your weight :")
-h=input ("Enter your height :")
+#input
+w=input ("Enter your weight(Kg) :")
+h=input ("Enter your height(M) :")
 BMI=float(w) / (float(h) ** 2)
-print("Your BMI is ",BMI)
-if BMI<18.5:
-    print("Underweight")
+bmi=None
+
+#process
+if BMI<18.5 and BMI>=0:
+    bmi="Underweight"
 elif BMI>=18.5 and BMI<25:
-    print("Normal weight")
+    bmi="Normal weight"
 elif BMI>=25 and BMI<30:
-    print("Overweight")
+    bmi="Overweight"
 else:
-    print("Obesity")
+    bmi="Obesity"
+
+#output
+print("Your BMI is ",BMI)
+print("Category: ",bmi)
